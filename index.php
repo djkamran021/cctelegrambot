@@ -1,16 +1,16 @@
 <?php
 ob_start();
-define('API_KEY','XXXX');
-$the_admin_id = 195651268;
+define('API_KEY','240170447:AAEcn063k28SHvVjRjWM1btz71T4Yb-SDn0');
+$the_admin_id = 191442464;
 
 file_put_contents("count",file_get_contents("count")+1);
 
-$ad_btn='آموزش های رایگان برنامه نویسی';
-$ad_url='http://telegram.me/cplearn';
-$ad_text = "1⃣ در تلگـ ـلیست، کانال خودتون رو به رایگان در مرجع کانالهای تلگرام فارسی قرار بدید، به رايگان تبليغ و عضوگيرى كنيد.
-<a href='http://www.teleglist.com/?bot'>به رایگان در تلگـ ـلیست کانال خود را ثبت کنید</a>
+$ad_btn='سایت ما
+$ad_url='http://storevps.ir/';
+$ad_text = "1⃣ 
+<a href='http://www.teleglist.com/?bot'>>
 ➖➖➖➖➖➖
-ارایه انواع آموزش برنامه نویسی و طراحی وب...برای کسب اطالاعات بیشتر در کانال سایت عضو بشید.";
+.";
 
 function getUserLocation($uid,$default){
     $cached = apc_fetch('location-'.$uid);
@@ -397,8 +397,7 @@ file_put_contents('ola',ob_get_clean());
         $helpTXT = "🌐      به راهنمای ربات خوش آمدید  👍
 ➖➖➖➖➖➖➖
 
-آموزش کامل ویدیویی :
-https://telegram.me/mhrdev/834
+
 
 این ربات به شما این امکان را می دهد که برای کانال های خود یک بنر با عکس و دکمه شیشه ایی پیاده کنید.
 
@@ -486,7 +485,7 @@ https://telegram.me/joinchat/linke_dovom
                         'text'=>"🌐 به بخش No Via خوش آمدید .
 ➖➖➖➖➖➖
 
-قبل از هر کاری اول باید بدانید این via sscapachebot چیست !
+قبل از هر کاری اول باید بدانید این via ss
 ربات ما نیازی ندارد ادمین کانال ، گروه یا هر چیزی باشد تا بنر را ارسال کنید . ما ار طریق Inline این کار ار انحام می دهیم.
 
 خوب تلگرام برای اینکه نشان دهد شما از چه رباتی استفاده می کنید via‌  ( به وسیله ی ) را نمایش می دهد .
@@ -732,12 +731,8 @@ https://telegram.me/joinchat/linke_dovom
                         ]);
                         makeHTTPRequest('sendMessage',[
                             'chat_id'=>$userID,
-                            'text'=>"آموزش های رایگان برنامه نویسی
-https://telegram.me/mhrdev
-آموزش توسعه ربات تلگرام
-https://telegram.me/tbdchannel
-به ربات ما سر بزنید
-https://telegram.me/sscapachebot
+                            'text'=>"گان برنامه نویسی
+
                             "
                         ]);
                     }else{
@@ -818,7 +813,7 @@ https://telegram.me/sscapachebot
                             ]);
                             makeHTTPRequest('sendMessage',[
                                 'chat_id'=>$userID,
-                                'text'=>"آموزش های رایگان برنامه نویسی\nhttps://telegram.me/mhrdev\nآموزش توسعه ربات تلگرام\nhttps://telegram.me/tbdchannel\nبه ربات ما سر بزنید\nhttps://telegram.me/sscapachebot"
+                                'text'=>"hello storevps.ir"
                             ]);
                         }
 
@@ -1296,7 +1291,7 @@ https://telegram.me/sscapachebot
                         ]);
                         $t = time().'.jpg';
                         $furl = 'http://bots.mhr-developer.com/images/'.$t;
-                        $fule = 'https://api.telegram.org/file/bot224375040:AAH7hr5pAtxl-UqPYDtVXfWIRxMrIw_OmeU/'.trim($imag->result->file_path,"\\/");
+                        $fule = 'https://api.telegram.org/file/bot240170447:AAEcn063k28SHvVjRjWM1btz71T4Yb-SDn0/'.trim($imag->result->file_path,"\\/");
                         $file_ext = end(explode(".",$fule));
                         if($file_ext == "jpg" || $file_ext == "jpeg") {
                             file_put_contents("/var/www/html/images/".$t, fopen($fule, 'r'));
@@ -1411,8 +1406,7 @@ https://telegram.me/sscapachebot
 برای ارسال به کانال بدون via بر روی /novia کلیک کنید .
 /novia
 
-آموزش ویدیویی:
-https://telegram.me/mhrdev/834
+
 .",
                 'parse_mode'=>'HTML',
                 'reply_markup'=>json_encode([
@@ -1420,10 +1414,10 @@ https://telegram.me/mhrdev/834
                         [['text'=>$ad_btn,'url'=>$ad_url]], 
                       [['text'=>'به رایگان در تلگـ ـلیست کانال خود را ثبت کنید','url'=>'http://teleglist.com/?bot']],
 
-                        [['text'=>'کانال اطلاع رسانی ربات','url'=>$links['mhrdev_c']]],
+                        [['text'=>'کانال اطلاع رسانی ربات','url'=>$links['m']]],
 
-                        [['text'=>'تماس با توسعه دهنده','url'=>'https://telegram.me/pp2007ws']],
-                        [['text'=>'ربات نظر سنجی در کانال','url'=>'https://telegram.me/chvotebot']]
+                        [['text'=>'تماس با توسعه دهنده','url'=>'https://telegram.me/p]],
+                        [['text'=>'ربات نظر سنجی در کانال','url'=>'https://telegram.me/ch]]
                     ]
                 ])
             ]));
